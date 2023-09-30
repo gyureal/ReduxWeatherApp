@@ -1,25 +1,6 @@
-# ReduxSimpleStarter
+## 개요
+> [Udemy - Modern React And Redux](https://www.udemy.com/react-redux/)의 BookList 예제를 학습한 내용을 기록하는 레포지토리입니다.
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
-
-### Getting Started
-
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+## 학습 내용 (리덕스 중급과정 - 미들웨어)
+- 날씨 어플리케이션
+<img width="839" alt="image" src="https://github.com/gyureal/ReduxSimpleStarter/assets/78974381/9c70be90-8b69-4a94-a6be-32c7ddcdb004">
