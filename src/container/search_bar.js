@@ -17,6 +17,8 @@ class SearchBar extends Component {
 
     onFormSubmit(event) {
         event.preventDefault();
+
+        // 액션 생성자가 액션을 생성하여 Weather 데이터를 fetch 
     }
     
     render() {
