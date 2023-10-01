@@ -40,9 +40,35 @@
 ### 미들웨어의 역할
 <img width="842" alt="image" src="https://github.com/gyureal/ReduxWeatherApp/assets/78974381/ccaf29bd-8c1f-4b31-bb63-b1dab160ba6a">
 
+- 미들웨어인 Redux-Promise
+   - 리덕스 Promise 는 미들웨어 로서, 발생되어 Reducer로 가는 액션을 탈취하여 조작하는 기능을 가지고 있다.
+   - 만약 Action의 payload가 데이터가 아닌 promise 라면, redux-promise 가 이를 처리하여 넘겨준다.
+   - axios(ajax)요청은 비동기로 처리되기 때문에 `콜백`이나 `promise`를 사용하여 `비동기적인 처리`를 해주어야하는데, `redux-promise`가 이 처리를 대신 해주어서 코드를 깔끔하게 유지할 수 있다.
+
+    <img width="818" alt="image" src="https://github.com/gyureal/ReduxWeatherApp/assets/78974381/c46e2728-99bd-49fc-b6a4-b2f9a6a00b6c">
+
+    <img width="497" alt="image" src="https://github.com/gyureal/ReduxWeatherApp/assets/78974381/df0bbc16-fc2a-42b7-971b-844969509988">
+
+
+### React-Sparklines 을 통한 차트 표시
+<img width="745" alt="image" src="https://github.com/gyureal/ReduxWeatherApp/assets/78974381/5dd506a1-5c96-4773-ab22-a9422ab97178">
+
+- [React Sparklines](https://github.com/borisyankov/react-sparklines)
+
+- 
+
+### React-Google_Map 을 이용한 지도 표시
+- [React-Google_Map](https://github.com/tomchentw/react-google-maps)
+
 
 ## Trouble Shooting
 ### import axios : Cannot use import statement outside a module
 참고) https://github.com/axios/axios/issues/5035
 해결) axios 최신버전이 아닌 이전 버전을 설치하니 해결되었다.
 `npm install axios@0.27.2`
+
+### React Sparklines 최신버전 설치할것 (1.7.0 이상)
+> 강의에서 1.6버전을 사용하라고 명시하고 있지만, 1.6설치 했을때, react sparklines 로드 시, 에러가 났다.
+> npm 최신 버전이 높을때, 1.7버전을 사용해야 하는 것 같다.
+- [1.6 사용을 권장하는 issue](https://github.com/borisyankov/react-sparklines/issues/89)
+- [1.6 사용시 에러날 때 1.7버전 사용 권장](https://github.com/borisyankov/react-sparklines/issues/97)
