@@ -1,13 +1,19 @@
+import _ from 'lodash';
 import React from 'react';
-import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines';
 
-// 반복되는 코드가 있다면 컴포넌트로 빼야한다는 신호입니다.
+function average(data) {
+    return _.round(_.sum(data)/data.length);
+}
+
 export default (props) => {
     return (
         <div>
             <Sparklines height={120} width={180} data={props.data}>
                 <SparklinesLine color={props.color}/>
+                <SparklinesReferenceLine type="avg" />
             </Sparklines>
+            <div>{ average(props.data) } { props.units }</div>
         </div>
     );
 }
